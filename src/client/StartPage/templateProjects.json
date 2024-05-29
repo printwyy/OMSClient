@@ -1,0 +1,52 @@
+[
+  {
+    "title": "电路电气仿真库",
+    "imageUrl": "assets/DecoratorSVG/Modelica.Electrical.Analog.jpg",
+    "description": "该库包含模拟电子元件的包。包括电阻器、电容器、导体、电感、变压器、旋转器等基本元件以及源和传感器。",
+    "infoUrl": "http://doc.modelica.org/om/Modelica.Electrical.Analog.html",
+    "createData": {
+      "seed": "Modelica",
+      "defaultName": "ElectricalAnalog",
+      "domains": [
+        "Modelica.Electrical.Analog"
+      ]
+    }
+  },
+  {
+    "title": "旋转动力学仿真库",
+    "imageUrl": "assets/DecoratorSVG/Modelica.Mechanics.Rotational.jpg",
+    "description": "该库提供一维旋转机械组件，可仿真具有摩擦损失的传动系统。",
+    "infoUrl": "http://doc.modelica.org/om/Modelica.Mechanics.Rotational.html",
+    "createData": {
+      "seed": "Modelica",
+      "defaultName": "RotationalMechanics",
+      "domains": [
+        "Modelica.Mechanics.Rotational"
+      ]
+    }
+  },
+  {
+    "title": "机械平移系统仿真库",
+    "imageUrl": "assets/DecoratorSVG/Modelica.Mechanics.Translational.jpg",
+    "description": "该库提供一维平移机械系统建模组件。组件左右两侧填充和未填充的绿色正方形表示机械法兰，在这样的正方形之间画一条线意味着相应的法兰是彼此紧密相连的。",
+    "infoUrl": "http://doc.modelica.org/om/Modelica.Mechanics.Translational.html",
+    "createData": {
+      "seed": "Modelica",
+      "defaultName": "TranslationalMechanics",
+      "domains": [
+        "Modelica.Mechanics.Translational"
+      ]
+    }
+  },
+  {
+    "title": "多物理场仿真",
+    "imageUrl": "assets/DecoratorSVG/HybridDomain.jpg",
+    "description": "可一次性选择创建包含多物理场领域的组件工作台，建立自定义多物理场混合系统。",
+    "infoUrl": "http://doc.modelica.org/om/Modelica.html",
+    "createData": {
+      "seed": "Modelica",
+      "defaultName": "ModelicaHybrid",
+      "domains": []
+    }
+  }
+]

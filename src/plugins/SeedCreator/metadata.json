@@ -1,0 +1,39 @@
+{
+  "id": "SeedCreator",
+  "name": "SeedCreator",
+  "version": "0.1.0",
+  "description": "This plugin is for internal developer use only.",
+  "icon": {
+    "class": "glyphicon glyphicon-cog",
+    "src": ""
+  },
+  "disableServerSideExecution": false,
+  "disableBrowserSideExecution": false,
+  "writeAccessRequired": true,
+  "configStructure": [
+    {
+      "name": "update",
+      "displayName": "Run simulation",
+      "description": "If true will update (add to) the existing components, otherwise recreate. TODO: this is not implemented",
+      "value": false,
+      "valueType": "boolean",
+      "readOnly": true
+    },
+    {
+      "name": "file",
+      "displayName": "Component file",
+      "description": "Path to file with component info or blob hash",
+      "value": "./src/common/comp_flat.json",
+      "valueType": "string",
+      "readOnly": false
+    },
+    {
+      "name": "updateBranch",
+      "displayName": "Update Branch",
+      "description": "If true will update the pointed branch",
+      "value": false,
+      "valueType": "boolean",
+      "readOnly": false
+    }
+  ]
+}

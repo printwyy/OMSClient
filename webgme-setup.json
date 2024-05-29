@@ -1,0 +1,73 @@
+{
+  "components": {
+    "routers": {
+      "AppRouter": {
+        "src": "src/routers/AppRouter",
+        "test": "test/routers/AppRouter",
+        "mount": "p"
+      },
+      "DomainManager": {
+        "src": "src/routers/DomainManager",
+        "test": "test/routers/DomainManager",
+        "mount": "DomainManager"
+      },
+      "ProjectRouter": {
+        "src": "src/routers/ProjectRouter",
+        "test": "test/routers/ProjectRouter",
+        "mount": ""
+      }
+    },
+    "seeds": {
+      "Modelica": {
+        "src": "src/seeds/Modelica"
+      }
+    },
+    "plugins": {
+      "DomainSelector": {
+        "src": "src/plugins/DomainSelector",
+        "test": "test/plugins/DomainSelector"
+      },
+      "ModelicaCodeGenerator": {
+        "src": "src/plugins/ModelicaCodeGenerator",
+        "test": "test/plugins/ModelicaCodeGenerator"
+      },
+      "ModelCheck": {
+        "src": "src/plugins/ModelCheck",
+        "test": "test/plugins/ModelCheck"
+      },
+      "SystemSimulator": {
+        "src": "src/plugins/SystemSimulator",
+        "test": "test/plugins/SystemSimulator"
+      },
+      "ModelicaDiff": {
+        "src": "src/plugins/ModelicaDiff",
+        "test": "test/plugins/ModelicaDiff"
+      },
+      "SeedCreator": {
+        "src": "src/plugins/SeedCreator",
+        "test": "test/plugins/SeedCreator"
+      },
+      "ModiaCodeGenerator": {
+        "src": "src/plugins/ModiaCodeGenerator",
+        "test": "test/plugins/ModiaCodeGenerator"
+      },
+      "MoveSVGToRegistryUtil": {
+        "src": "src/plugins/MoveSVGToRegistryUtil",
+        "test": "test/plugins/MoveSVGToRegistryUtil"
+      }
+    },
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "visualizers": {}
+  },
+  "dependencies": {
+    "routers": {},
+    "seeds": {},
+    "plugins": {},
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "visualizers": {}
+  }
+}

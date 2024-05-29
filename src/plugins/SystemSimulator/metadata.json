@@ -1,0 +1,83 @@
+{
+  "id": "SystemSimulator",
+  "name": "仿真设置",
+  "version": "0.1.0",
+  "description": "",
+  "icon": {
+    "class": "glyphicon glyphicon-cog",
+    "src": ""
+  },
+  "disableServerSideExecution": false,
+  "disableBrowserSideExecution": true,
+  "writeAccessRequired": true,
+  "configStructure": [
+    {
+      "name": "simulationTool",
+      "displayName": "仿真求解工具",
+      "description": "执行求解的编译仿真工具",
+      "value": "Only Code Generation",
+      "valueType": "string",
+      "valueItems": [
+        "Only Code Generation",
+        "OpenModelica"
+      ],
+      "readOnly": false
+    },
+    {
+      "name": "stopTime",
+      "displayName": "仿真时间",
+      "description": "该物理系统的仿真结束时间",
+      "value": 1,
+      "minValue": 0,
+      "valueType": "number",
+      "readOnly": false
+    },
+    {
+      "name": "stepSize",
+      "displayName": "采样步长",
+      "description": "该物理系统的仿真采样步长",
+      "value": "0.002",
+      "valueType": "string",
+      "readOnly": false
+    },
+    {
+      "name": "tolerance",
+      "displayName": "容差大小",
+      "description": "仿真过程中用于数值求解的容差设置",
+      "value": "1e-6",
+      "valueType": "string",
+      "readOnly": false
+    },
+    {
+      "name": "solver",
+      "displayName": "求解器",
+      "description": "执行模型求解的求解器",
+      "value": "dassl",
+      "valueType": "string",
+      "valueItems": [
+        "dassl",
+        "euler",
+        "heun",
+        "rungekutta",
+        "impeuler",
+        "trapezoid",
+        "imprungekutta",
+        "irksco",
+        "ida",
+        "rungekuttaSsc",
+        "symSolver",
+        "qss",
+        "optimization"
+      ],
+      "readOnly": false
+    },
+    {
+      "name": "executionName",
+      "displayName": "执行结果名称",
+      "description": "存储执行结果的标识",
+      "value": "Execution Result",
+      "valueType": "string",
+      "readOnly": false
+    }
+  ]
+}

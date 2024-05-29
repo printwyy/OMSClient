@@ -1,0 +1,52 @@
+# To build and launch (first time):
+#   $ docker-compose up -d
+# To create new images (--no-cache) to force building from scratch:
+#   $ docker-compose build
+# To launch again (leave out -d for non daemon launch):
+#   $ docker-compose up -d
+# To stop containers:
+#  $ docker-compose stop
+version: '3'
+networks:
+  workers:
+    driver: bridge
+    #internal: true
+  database:
+    driver: bridge
+
+services:
+  webgme:
+    build: .
+    depends_on:
+      - mongo
+    environment:
+      - NODE_ENV=dockercompose
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+     - 8888:8888
+    networks:
+      - database
+      - workers
+  mongo:
+    image: mongo:4.4.5
+    # ports:
+    #  - 27017:27017
+    # volumes:
+    # - ~/data/db:/data/db
+    networks:
+      - database
+  dss-worker:
+    image: dss-worker
+    build:
+      context: .
+      dockerfile: DockerfileOM
+    #command: ["cat", "/dev/null"] # A no-op command so the image is built.
+    environment:
+      - NODE_ENV=dockercompose
+    ports:
+     - 80:80
+    networks:
+      - workers
+    stdin_open: true
+    tty: true
